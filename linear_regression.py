@@ -8,7 +8,6 @@ boston = load_boston()
 df_x = pd.DataFrame(boston.data, columns = boston.feature_names)
 
 df_y = pd.DataFrame(boston.target)
-print(df_y)
 
 model = linear_model.LinearRegression()
 
@@ -19,8 +18,4 @@ model.fit(x_train, y_train)
 result = model.predict(x_test)
 
 print(result[5], y_test)
-
-
-
-
 
